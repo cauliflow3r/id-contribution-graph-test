@@ -15,7 +15,6 @@ const ContributionGraph = () => {
       const currentDate = new Date();
       currentDate.setDate(currentDate.getDate() - i + 1);
 
-      // Format the date as "YYYY-MM-DD"
       const formattedDate = currentDate.toISOString().split("T")[0];
 
       newData[formattedDate] = [
