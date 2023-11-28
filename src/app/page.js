@@ -9,7 +9,7 @@ export default function Home() {
         className={styles.title}
         style={{ color: "white", marginTop: "20px" }}
       >
-        Contribution Graph
+        Contribution Graph: Dzhirtanov Azamat
       </h1>
       <ContributionGraph />
     </main>
