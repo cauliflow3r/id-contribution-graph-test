@@ -3,4 +3,41 @@
   width: 1120px;
   height: 279px;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.graph {
+  height: 120px;
+  width: 897px;
+  display: flex;
+  z-index: 999;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.square {
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin: 1px;
+  border: 1px solid transparent;
+}
+.square:hover {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.tooltipText {
+  width: 145px;
+  height: 42px;
+  color: #fff;
+  background-color: #000000;
+  border-radius: 3px;
+  visibility: hidden;
+  position: absolute;
+  z-index: 999;
+  top: -10px; /* Adjust the positioning */
+  left: 0;
+  transform: translate(-50%, -100%);
+}
+.square:checked .tooltipText {
+  visibility: visible;
 }
